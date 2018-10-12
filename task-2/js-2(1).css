@@ -1,0 +1,154 @@
+*{
+  margin:0;
+  padding:0;
+}
+body
+{
+  background-color:#f3f1f1;
+}
+.nav-top
+{
+  width:100%;
+  height:3rem;
+  background-color: #29bde0;
+}
+.menu {
+  position:absolute;
+  top:6px;
+  left:10px;
+  transition: transform 250ms ease;
+  cursor: pointer;
+  z-index: 200;
+}
+#menu {
+  display: none;
+}
+/*侧边栏移动*/
+#menu:checked ~ .nav {
+  left: 0px;
+  transition: left 500ms ease;
+}
+/*主页移动*/
+#menu:checked ~ main {
+  transform: translateX(310px);
+  transition: transform 500ms ease;
+}
+.main
+{
+  transform: translateX(0px);
+  transition: transform 500ms ease;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color:white;
+  transition: left 500ms ease;
+}
+.nav ul {
+  position: relative;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  border-top:3rem solid #29bde0;
+}
+.nav ul li {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #b5b4b4;
+}
+.nav img:first-child
+{
+  left:10px;
+}
+.nav img:nth-child(3)
+{
+  right:10px;
+}
+.nav img
+{
+  position:absolute;
+  top:15px;
+}
+.nav ul li a {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 15px 40px;
+  color: #29bde0;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+}
+.box1,.box2
+{
+  position: relative;
+  height:4rem;
+  display: flex;
+  align-items:center;
+  width:90%;
+  background-color: white;
+  border:solid 1px #999999;
+}
+.box1
+{
+  justify-content: center;
+}
+.box1 img
+{
+  height:1.5rem;
+  position: absolute;
+  right:1rem;
+}
+.box2
+{
+  display: flex;
+  flex-direction: column;
+  height:450px;
+  margin-top:20px;
+}
+.box2-1
+{
+  width:100%;
+  text-align: center;
+  padding:20px 0;
+  border-bottom:solid 1px #ffc865;
+}
+.box2-2,.linktop2
+{
+  width:70%;
+  height:5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+a
+{
+  margin-top:10px;
+}
+.box2-2
+{
+  width:100%;
+}
+.box2-3
+{
+  padding:10px 0 5px 0;
+}
+.box2>img
+{
+  position:absolute;
+  right:0.5rem;
+  top:50%;
+  margin-top: -20px;
+}

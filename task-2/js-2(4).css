@@ -1,0 +1,118 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*导航栏的样式*/
+.TopNav{
+	height:3rem;
+	position:relative;
+}
+.TopNav-back{
+	transform:rotateY(180deg);
+	position:absolute;
+	left:10px;
+	top:0.75rem;
+}
+.TopNav-back img{
+	height:1.5rem;
+	width:15px;
+}
+/*主体部分的样式*/
+.main{
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.box1,.box2,.box3,.box4{
+	width:95%;
+	margin:10px 0;
+}
+/*第一和第二个框*/
+.box1{
+	box-shadow:0px 3px 2px 2px #cccbcb;
+	padding:3px 0;
+	text-align: center;
+}
+.box2{
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position:relative;
+	height:150px;
+}
+.Box2Killer,.Box2Water{
+	width:45%;
+	text-align: center;
+	padding:15px 0 0 0;
+}
+.Box2Set{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	padding:5px 0;
+	text-align: center;
+	border-top:solid 1px #c2c2c2;
+}
+.Box2Square{
+	height:10px;
+	width:10px;
+}
+/*第三个框*/
+.Box3KillerWords,.Box3WaterWords{
+	margin:15px 25px;
+	border-bottom:solid 1px #c2c2c2;
+}
+.Box3KillerWords>input,.Box3WaterWords>input{
+	border:none;
+	width:60%;
+	color:#999;
+}
+/*第四个框*/
+.box4>input{
+	width:2%;
+}
+.box4>p{
+	margin:10px 0;
+}
+.box4>p:first-child{
+	margin-left:10px;
+}
+/*底部按钮*/
+.BottomButton{
+	width:70%;
+	background-color: orange;
+	color:white;
+	border:none;
+	outline:none;
+	cursor: pointer;
+	padding:10px 0;
+	position:absolute;
+	bottom:50px;
+}
+.Box4Range{
+	margin:25px;
+	text-align: center;
+}
+input[type="range"]{
+	-webkit-appearance: none;
+	width:60%;
+	background-color: orange;
+	height:2px;
+	margin:0 25px;
+	position:relative;
+	top:-5px;
+}
+input[type=range]::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	height:15px;
+	width:15px;
+	background-color: white;
+	border-radius: 50%;
+	border:solid 1px grey;
+}
+.Box4cut,.Box4plus{
+	height:1rem;
+	width:1rem;
+	border:solid 1px orange;
+	color:orange;
+	display: inline-flex;
+	cursor: pointer;
+}
