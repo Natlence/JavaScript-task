@@ -2,7 +2,7 @@
 // 点击发牌后弹出框的函数
 function print(){
 	var players = document.getElementById("showplayers").value;
-	if(players>4 && players<18){
+	if(players>4 && players<=18){
 		window.location.href="https://natlence.github.io/JavaScript-task/task-2/js-2(5).html";
 	}
 	else{
