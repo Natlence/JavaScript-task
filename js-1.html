@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  onkeydown="keyStart()" >
+<head>
+	<title>js-1</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="js-1.css">
+</head>
+<body onkeydown="keyStop()">
+	<div class="out-box">
+		<div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div style="clear: both;"></div>
+	</div>
+	<div class="button-all">
+		<div class="father1">
+			<button id="start" class="button" onclick="start()" >开始闪</button>
+		    <div class="show1">按下回车键也可开始</div>
+		</div>
+		<div class="father2">
+			<button id="stop" class="button" onclick="stop()">结束闪</button>
+			<div class="show2">按下空格键也可停止</div>
+		</div>
+	</div>
+	<div class="gap"></div>
+	<script type="text/javascript" src="js-1.js"></script>
+</body>
+</html>

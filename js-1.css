@@ -1,0 +1,56 @@
+.out-box
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.box{
+	width:25vw;
+	margin:5px;
+	float:left;
+	background-color:orange;
+	border-radius: 10px;
+	height:25vw;
+}
+.button-all{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top:50px;
+}
+.button{
+	width:60vw;
+	height:50px;
+	border:1px solid orange;
+	border-radius: 10px;
+	background-color: white;
+	color:orange;
+	margin-top:15px;
+	cursor:pointer;
+}
+.button:hover{
+	background-color: orange;
+	color:white;
+}
+.show1,.show2{
+	width:60vw;
+	text-align: center;
+	margin-top:10px;
+	background-color: orange;
+	color:white;
+	display: none;
+	border-radius: 15px;
+}
+@media screen and (min-width: 768px){
+.father1:hover
+.show1{
+	display: block;
+}
+.father2:hover
+.show2{
+	display: block;
+}
+}
+.gap{
+	height:150px;
+}
