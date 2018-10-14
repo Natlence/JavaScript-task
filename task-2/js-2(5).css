@@ -1,0 +1,68 @@
+.top-nav{
+	height:40px;
+	width:100%;
+	position: relative;
+}
+.top-nav img{
+	height:1.5rem;
+	width:auto;
+	position:absolute;
+}
+.arrow{
+	left:20px;
+}
+.cancel{
+	position: absolute;
+	right:20px;
+}
+.arrow{
+	transform:rotateY(180deg);
+}
+.show{
+	width:70%;
+	height:60vh;
+	background-color: #ffedc5;
+	margin:10vh 0;
+	border:5px solid white;
+	position: relative;
+}
+.player-num{
+	height:35px;
+	width:35px;
+	background-color: white;
+	border:solid 2px #ffedc5;
+	border-radius: 50%;
+	position:absolute;
+	top:-20px;
+	color:#f4647d;
+}
+.bottom-button{
+	width:75%;
+	background-color: orange;
+	height:50px;
+	border:none;
+	outline:none;
+	cursor: pointer;
+	color:white;
+	font-size: 1.5rem;
+}
+.img-box{
+	position: relative;
+	height:30vh;
+	width:20vh;
+}
+.pic{
+	height:20vh;
+	width:20vh;
+	position: absolute;
+}
+.normalpeople{
+	display: none;
+}
+.pic-word{
+	position: absolute;
+	bottom:0;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color:#f4647d;
+}
