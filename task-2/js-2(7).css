@@ -1,0 +1,77 @@
+.top-nav{
+	height:30px;
+	width:100%;
+	position: relative;
+	padding:15px 0;
+}
+.top-nav img{
+	height:1.5rem;
+	width:auto;
+	position:absolute;
+	top:18px;
+}
+.arrow{
+	left:20px;
+}
+.cancel{
+	position: absolute;
+	right:20px;
+}
+.arrow{
+	transform:rotateY(180deg);
+}
+.bottom{
+	width:100%;
+	height:8vw;
+	background-color:rgba(41, 189, 224,0.5);
+	position:fixed;
+	bottom:0;
+	justify-content: space-around;
+}
+.bottom>button{
+	border-style: none;
+	outline: none;
+	width:35%;
+	height: 4vw;
+	color:white;
+	background-color:orange;
+	border-radius:10px;
+	cursor: pointer;
+}
+.bottom>button:first-child{
+	background-color:#b94f4f;
+}
+.main{
+	width:100%;
+	margin:25px 0;
+}
+.outbox{
+	width:80%;
+	border:solid 1px #9999;
+}
+.date{
+	height:30px;
+	font-weight: bold;
+	border-bottom: solid 1px #9999;
+}
+.process{
+	width:90%;
+	float:right;
+	flex-wrap: wrap;
+	border-left:1px solid #9999;
+	position: relative;
+}
+.process>div{
+	margin:10px 0;
+	width:70%;
+	height:30px;
+	cursor: pointer;
+}
+.moon,.sun{
+	position:absolute;
+	left:-15px;
+	display: inline-block;
+}
+.sun{
+	top:50px;
+}

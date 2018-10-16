@@ -1,0 +1,49 @@
+.top-nav{
+	height:40px;
+	width:100%;
+	position: relative;
+	padding:15px 0;
+}
+.top-nav img{
+	height:1.5rem;
+	width:auto;
+	position:absolute;
+}
+.arrow{
+	left:20px;
+}
+.cancel{
+	position: absolute;
+	right:20px;
+}
+.arrow{
+	transform:rotateY(180deg);
+}
+.main{
+	flex-wrap: wrap;
+}
+.box-top{
+	height:70%;
+	width:100%;
+}
+.box-bottom{
+	height:30%;
+	width:100%;
+	background-color: #83b09a;
+	color:white;
+}
+.bottom{
+	width:100%;
+	height:10vw;
+	position: fixed;
+	bottom:0;
+}
+.bottom-btn{
+	height:5vw;
+	width:60%;
+	background-color: orange;
+	outline: none;
+	border-style: none;
+	color:white;
+	cursor: pointer;
+}
