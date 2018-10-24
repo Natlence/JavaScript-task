@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>玩家匹配</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="js-2.css">
+	<link rel="stylesheet" type="text/css" href="js-2(4).css">
+</head>
+<body class=" bgrey">
+	<!-- 顶部导航栏 -->
+	<div class="TopNav bgb w10">
+		<div class="TopNav-back">
+			<a href="js-2(1).html">
+			<img src="pic1/箭头.png">
+			</a>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div class="main dpf">
+		<div class="box1 bgw fslg"><p>玩家配比</p></div>
+		<div class="box2 bgw dpf">
+			<div class="Box2Killer dpb">
+				<div class="Box2Square bgb dpb"></div>
+				<p class="fsmd dpb">杀手</p><p id="Killershow" class=" dpb">0</p><p class="fssm dpb">人</p>
+			</div>
+			<div class="Box2Water dpb">
+				<div class="Box2Square bgr dpb"></div>
+				<p class="fsmd dpb">水民</p><p id="watershow" class=" dpb">0</p><p class="fssm dpb">人</p>
+			</div>
+			<div class="Box2Set dpb"  onclick="set()">
+				<p class="fssm dpb fcblue">点击设置</p>
+				<img src="pic1/pencil.png">
+			</div>
+		</div>
+		<div class="box3 bgw">
+			<div class="Box3KillerWords">
+				<p class="dpb fssm fcgrey">水民词组:</p>
+				<input type="text" name="" value="仅限输入十个字">
+			</div>
+			<div class="Box3WaterWords">
+				<p class="dpb fssm fcgrey">幽灵词组:</p>
+				<input type="text" name="" value="仅限输入十个字">
+			</div>
+		</div>
+		<div class="box4 bgw">
+			<p class="dpb">请输入玩家数量</p>
+			<input type="text" placeholder="4" id="showplayers" onblur="change1()">
+			<p class="dpb fco">玩家数量为4-18</p>
+			<div class="Box4Range">
+				<div class="Box4cut dpf both-cen" onclick="cut()">-</div>
+				<input id="range" type="range" max="18" min="4" value="4" step="1" oninput="change2()">
+				<div class="Box4plus both-cen" onclick="plus()">+</div>
+			</div>
+		</div>
+		<!-- 底部按钮 -->
+		<button class="BottomButton" onclick="deal()" >去发牌</button>
+	</div>
+	<script type="text/javascript" src="js-2(4).js" ></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</body>
+</html>

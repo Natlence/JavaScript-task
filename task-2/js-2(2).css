@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header div {
+  padding: 10px 0;
+  display: flex;
+  align-items: center; }
+header div:first-child {
+  justify-content: center; }
+  header div:first-child img {
+    height: 25px;
+    width: 25px;
+    position: absolute; }
+  header div:first-child img:first-child {
+    left: 20px; }
+  header div:first-child img:last-child {
+    right: 20px; }
+header div:nth-child(2) {
+  padding: 10px 0;
+  position: relative; }
+  header div:nth-child(2) p {
+    position: relative;
+    left: 40px; }
+  header div:nth-child(2) img:nth-child(2) {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 20px; }
+  header div:nth-child(2) img:last-child {
+    position: absolute;
+    top: 100%;
+    left: 40px; }
+header div:last-child {
+  padding: 20px 40px; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  main .box {
+    width: 25%;
+    margin: 10px 10px; }
+    @media screen and (max-width: 600px) {
+      main .box {
+        height: 8rem; } }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      main .box {
+        height: 10rem; } }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      main .box {
+        height: 11rem; } }
+    @media screen and (min-width: 1200px) {
+      main .box {
+        height: 13rem; } }
+    main .box:hover
+    .hover {
+      display: flex; }
+  main .item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 450px) {
+      main .item {
+        height: 6rem;
+        width: 90%; } }
+    @media screen and (min-width: 450px) and (max-width: 600px) {
+      main .item {
+        height: 6rem;
+        width: 80%; } }
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      main .item {
+        height: 6rem;
+        width: 60%; } }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      main .item {
+        height: 8rem;
+        width: 60%; } }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      main .item {
+        height: 9rem;
+        width: 60%; } }
+    @media screen and (min-width: 1200px) {
+      main .item {
+        height: 11rem;
+        width: 60%; } }
+    main .item .item-num {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center; }
+  main .hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 60%;
+    display: none; }
+    @media screen and (max-width: 450px) {
+      main .hover {
+        width: 90%; } }
+    @media screen and (min-width: 450px) and (max-width: 600px) {
+      main .hover {
+        width: 80%; } }
+    main .hover img {
+      height: 21px;
+      width: 21px; }
+
+footer {
+  height: 150px;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  footer .bottom {
+    height: 100%;
+    width: 100%;
+    border-top: white 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .bottom a {
+      width: 70%;
+      height: 50%;
+      text-decoration: none; }
+      footer .bottom a .bottom-item {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+/*# sourceMappingURL=task13(2).css.map */
