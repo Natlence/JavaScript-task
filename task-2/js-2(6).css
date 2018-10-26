@@ -17,6 +17,9 @@
 .arrow{
 	left:20px;
 }
+.back{
+	cursor: pointer;
+}
 .cancel{
 	right:20px;
 }
