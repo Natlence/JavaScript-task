@@ -22,6 +22,9 @@ function  cancel(){
 		window.location.href="js-2(1).html";
 	}
 }
+function back() {
+    window.location.href="js-2(5).html";
+}
 //将玩家身份赋到盒子中
 var box = document.getElementsByClassName("box");
 var boxTop =document.getElementsByClassName("box-top");
