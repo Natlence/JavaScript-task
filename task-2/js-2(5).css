@@ -13,7 +13,8 @@
 }
 .cancel{
 	position: absolute;
-	right:20px;
+	right:40px;
+	border-style: none;
 }
 .arrow{
 	transform:rotateY(180deg);
